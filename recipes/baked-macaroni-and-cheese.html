@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0 20px;
+        }
+        img {
+            max-width: 100%;
+        }
+        section {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        div{
+            max-width: 720px;
+        }
+        div p {
+            text-align: justify;
+        }
+        div ul {
+            padding: 0 20px;
+        }
+        div ol{
+            list-style: none;
+            counter-reset: num;
+            padding: 0 ;
+        }
+        div ol li{
+            counter-increment: num;
+        }
+        div ol li::before{
+            content: "Step " counter(num);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Old School Mac n' Cheese</h1>
+            <img src="https://assets.bonappetit.com/photos/5a7363ae2d1b363d3b8f0a7f/16:9/w_7678,h_4318,c_limit/stuffed-peppers-1.jpg" alt="" width="720">
+            <p>This is a completely unpretentious, down-home macaroni and cheese recipe just like my grandma and mom always made. A simple white sauce where you add cheese and a few other flavors with macaroni and a potato chip crust. This recipe makes a lot, I like to make two pans so I can take one to a pot luck and have the other one to keep in the fridge for later. It's an easy recipe to adjust down if you only want to make one pan. If you aren't cooking it right away, just keep the topping separate until you are ready to put it in the oven.</p>
+        </div>
+        <div>
+            <h1>Ingredients</h1>
+            <ul>
+                <li>1 cup cold water</li>
+                <li>½ cup uncooked long grain white rice</li>
+                <li>1 tablespoon vegetable oil</li>
+                <li>1 pound ground beef</li>
+                <li>6 medium green bell peppers</li>
+                <li>16 ounces tomato sauce, divided</li>
+                <li>1 tablespoon Worcestershire sauce</li>
+                <li>¼ teaspoon garlic powder</li>
+                <li>¼ teaspoon onion powder</li>
+                <li>salt and ground black pepper to taste</li>
+                <li>1 teaspoon Italian seasoning</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Steps</h1>
+            <ol>
+                <li>
+                    <p>Gather all ingredients, and preheat the oven to 350 degrees F (175 degrees C).</p>
+                </li>
+                <li>
+                    <p>Bring water and rice to a boil in a covered saucepan. Reduce heat to low and simmer until rice is tender, about 20 minutes.</p>
+                </li>
+                <li>
+                    <p>Meanwhile, heat oil in a skillet over medium heat. Add ground beef and cook until evenly browned and crumbly, 7 to 9 minutes.
+                    </p>
+                </li>
+                <li>
+                    <p>Hollow out bell peppers by removing and discarding the tops, seeds, and membranes. Slice the bottoms of the peppers if necessary to make sure they stand up straight.</p>
+                </li>
+                <li>
+                    <p>Arrange peppers in a baking dish with the hollowed sides facing upward.</p>
+                </li>
+                <li>
+                    <p>Prepare filling by mixing cooked beef, cooked rice, 1/2 of the tomato sauce, Worcestershire sauce, garlic powder, onion powder, salt, and pepper. Spoon an equal amount of filling into each hollowed pepper.</p>
+                </li>
+                <li>
+                    <p>Mix remaining tomato sauce and Italian seasoning in a bowl, and pour over the stuffed peppers.</p>
+                </li>
+                <li>
+                    <p>Bake in the preheated oven, basting with sauce every 15 minutes, until peppers are tender, about 1 hour.</p>
+                </li>
+                <li>
+                    <p>Serve hot and enjoy!</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
