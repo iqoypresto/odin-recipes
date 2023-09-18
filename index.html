@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin: 0;
         }
+
         img {
             max-width: 100%;
         }
-        section{
+
+        section.container {
             max-width: 1280px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
         }
+
         h1 {
             text-align: center;
+            grid-column: 1 / span 4;
         }
-        table{
-            width: 100%;
-        }
-        table tr{
+
+        .row{
+            grid-column: 1 / span 4;
             display: flex;
             justify-content: space-between;
         }
-        a{
+
+        .row a p {
+            font-size: 12px;
+            font-weight: 700;
+            color: rgb(85, 85, 85);
+        }
+
+        a {
             text-decoration: none;
             color: black;
         }
-        a:hover h3{
+
+        a:hover h3 {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-    <section>
+    <section class="container">
         <h1>Odin Recipes</h1>
-        <table>
-            <tr class="table-content">
-                <td>
-                    <a href="recipes/stuffed-peppers.html">
-                        <img src="https://www.allrecipes.com/thmb/M22pX1hGvUT6v6F62ybWVc3dA1Q=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(1999x0:2001x2):format(webp)/16330-Stuffed-Peppers-mfs-STEP-024-812c58e78eb5489789d1d1c6dfd661ff.jpg" alt="">
-                        <p>STUFFED BELL PEPPER RECIPES</p>
-                        <h3>Stuffed Peppers</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="recipes/baked-macaroni-and-cheese.html">
-                        <img src="https://www.allrecipes.com/thmb/M22pX1hGvUT6v6F62ybWVc3dA1Q=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(1999x0:2001x2):format(webp)/16330-Stuffed-Peppers-mfs-STEP-024-812c58e78eb5489789d1d1c6dfd661ff.jpg" alt="">
-                        <p>BAKED MACARONI AND CHEESE RECIPES</p>
-                        <h3>Old School Mac'n Cheese</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="#">
-                        <img src="https://www.allrecipes.com/thmb/M22pX1hGvUT6v6F62ybWVc3dA1Q=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(1999x0:2001x2):format(webp)/16330-Stuffed-Peppers-mfs-STEP-024-812c58e78eb5489789d1d1c6dfd661ff.jpg" alt="">
-                        <p>CHICKEN</p>
-                        <h3>Chicken Enchiladas</h3>
-                    </a>
-                </td>
-            </tr>
-            <tr class="table-content">
-                <td>
-                    <a href="#">
-                        <img src="https://www.allrecipes.com/thmb/M22pX1hGvUT6v6F62ybWVc3dA1Q=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(1999x0:2001x2):format(webp)/16330-Stuffed-Peppers-mfs-STEP-024-812c58e78eb5489789d1d1c6dfd661ff.jpg" alt="">
-                        <p>MEATLOF RECIPES</p>
-                        <h3>Chef John's Meatball-Inspired Meatloaf</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="#">
-                        <img src="https://www.allrecipes.com/thmb/M22pX1hGvUT6v6F62ybWVc3dA1Q=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(1999x0:2001x2):format(webp)/16330-Stuffed-Peppers-mfs-STEP-024-812c58e78eb5489789d1d1c6dfd661ff.jpg" alt="">
-                        <p>ASIAN</p>
-                        <h3>Stir-Fried Ginger Broccoli Beef</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="#">
-                        <img src="https://www.allrecipes.com/thmb/M22pX1hGvUT6v6F62ybWVc3dA1Q=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(1999x0:2001x2):format(webp)/16330-Stuffed-Peppers-mfs-STEP-024-812c58e78eb5489789d1d1c6dfd661ff.jpg" alt="">
-                        <p>MAIN DISHES</p>
-                        <h3>Easy Air Fryer Pork Chops</h3>
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <div class="row">
+            <a href="recipes/stuffed-peppers.html">
+                <img src="https://www.allrecipes.com/thmb/M22pX1hGvUT6v6F62ybWVc3dA1Q=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(1999x0:2001x2):format(webp)/16330-Stuffed-Peppers-mfs-STEP-024-812c58e78eb5489789d1d1c6dfd661ff.jpg"
+                    alt="">
+                <p>STUFFED BELL PEPPER RECIPES</p>
+                <h3>Stuffed Peppers</h3>
+            </a>
+            <a href="recipes/baked-macaroni-and-cheese.html">
+                <img src="https://www.allrecipes.com/thmb/ETpwldL2BqMGcBnGzLuqrh7xaiE=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(499x0:501x2):format(webp)/872665-old-school-mac-n-cheese-RainbowJewels-4x3-1-980f2f32734744289c8956256206035e.jpg"
+                    alt="">
+                <p>BAKED MACARONI AND CHEESE RECIPES</p>
+                <h3>Old School Mac n' Cheese</h3>
+            </a>
+            <a href="recipes/chicken-enchiladas.html">
+                <img src="https://www.allrecipes.com/thmb/H4siKAKhE-iBtkGEuhDvLEq13tA=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(479x0:481x2):format(webp)/Chicken-Enchiladas-739fd129b4f3439293859ba87f263162.jpg"
+                    alt="">
+                <p>CHICKEN</p>
+                <h3>Chicken Enchiladas</h3>
+            </a>
+        </div>
+        <div class="row">
+            <a href="recipes/stuffed-peppers.html">
+                <img src="https://www.allrecipes.com/thmb/M22pX1hGvUT6v6F62ybWVc3dA1Q=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(1999x0:2001x2):format(webp)/16330-Stuffed-Peppers-mfs-STEP-024-812c58e78eb5489789d1d1c6dfd661ff.jpg"
+                    alt="">
+                <p>STUFFED BELL PEPPER RECIPES</p>
+                <h3>Stuffed Peppers</h3>
+            </a>
+            <a href="recipes/baked-macaroni-and-cheese.html">
+                <img src="https://www.allrecipes.com/thmb/ETpwldL2BqMGcBnGzLuqrh7xaiE=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(499x0:501x2):format(webp)/872665-old-school-mac-n-cheese-RainbowJewels-4x3-1-980f2f32734744289c8956256206035e.jpg"
+                    alt="">
+                <p>BAKED MACARONI AND CHEESE RECIPES</p>
+                <h3>Old School Mac n' Cheese</h3>
+            </a>
+            <a href="recipes/chicken-enchiladas.html">
+                <img src="https://www.allrecipes.com/thmb/H4siKAKhE-iBtkGEuhDvLEq13tA=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(479x0:481x2):format(webp)/Chicken-Enchiladas-739fd129b4f3439293859ba87f263162.jpg"
+                    alt="">
+                <p>CHICKEN</p>
+                <h3>Chicken Enchiladas</h3>
+            </a>
+        </div>
+        
     </section>
 </body>
+
 </html>
